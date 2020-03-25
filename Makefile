@@ -25,7 +25,7 @@ $(TARGET4): $(FILE1)
 	$(CC) $(CFLAGS) -o $(TARGET4) $(FILE4)
 
 install: all
-	mv {iops32,iops64,flops32,flops64}	/usr/bin/
+	mv -t /usr/bin/ iops32 iops64 flops32 flops64
 
 uninstall: all
 	rm /usr/bin/{iops32,iops64,flops32,flops64}
