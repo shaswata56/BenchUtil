@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -lpthread -Wno-overflow
+CFLAGS = -lpthread -Wno-overflow -pthread
 
 TARGET1 = flops32
 FILE1	= BenchmarkFLOPS32.c
